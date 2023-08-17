@@ -1,13 +1,119 @@
-body {
+body{
+  background-color: #F6FCFF;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "MontSerrat", sans-serif;
+}
+input::placeholder,
+textarea::placeholder{
+  font-family: "MontSerrat", sans-serif;
+  color: #AAA;
+}
+input:focus, textarea:focus{
+  outline: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a, nav button{
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  color: black;
+  transition: .4s;
+  font-size: 1em;
+  cursor: pointer;
+  font-family: "MontSerrat", sans-serif;
+  border-radius: 5px;
+}
+a:hover, nav button:hover{
+  color:#bbb ;
+}
+
+/* form styles */
+
+form{
+  max-width: 25%;
+  margin: 0 auto;
+
+}
+label{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+label span{
+  margin-bottom: .3em;
+  font-weight: bold;
+  text-align: left;
+}
+input, textarea{
+  box-sizing: border-box;
+  border: none;
+  padding: .8em 0;
+  border-bottom: 1px solid #CCC;
+  background-color: transparent;
+}
+
+.btn{
+  background-color: #1a8918;
+  color: #FFF;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  width: 120px;
+  font-weight: bold;
+  padding: 10px 15px;
+  font-size: 1em;
+
+}
+
+.btndark{
+  background-color:black;
+  border-radius: 0;
+  color: #FFF;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  width: 120px;
+  font-weight: bold;
+  padding: 10px 15px;
+  font-size: 1em;
+  transition: .4s;
+}
+.btndark:hover{
+  background-color: rgb(38, 38, 38);
+
+}
+
+.btn.btn-outine{
+  background-color: transparent;
+  border-radius: 0;
+  color: #000;
+  border:1px solid #000;
+  padding: 7px 30px;
+}
+
+.btn:hover{
+  background-color: #0F730C;
+  color: #FFF;
+
+}
+.btn.btn-outine:hover{
+  background-color: #000;
+}
+.btn.btn-danger:hover{
+  background-color: #DC3545;
+}
+
+button[disabled]{
+  background-color: #AAA;
+}
+
+.container .error{
+  color: #721C24;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  padding: 5px;
 }
